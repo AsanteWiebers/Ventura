@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@300;400;600&family=Nunito+Sans:wght@300;400;700&display=swap");
+
 :root {
   --accent: #f48847;
   --light-accent: #e9ceb0;
@@ -69,6 +71,10 @@ select {
   background-color: hsl(var(--clr-white));
 }
 
+.whiteiconcolor {
+  color: white;
+}
+
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
@@ -88,4 +94,16 @@ select {
 .grid-container {
   display: grid;
   grid-template-columns: 2em minmax(0, 40rem) minmax(0, 40rem) 2em;
+}
+
+.ff-serif-logo {
+  font-family: var(--ff-serif-logo);
+}
+
+.ff-sans {
+  font-family: var(--serif-2);
+}
+
+.ff-normal {
+  font-family: var(--serif-3);
 }
