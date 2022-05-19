@@ -75,6 +75,7 @@ picture {
 
 a {
   text-decoration: none;
+  color: $white;
 }
 
 ul,
@@ -185,6 +186,10 @@ body {
   font-family: $ff-paragraph;
   line-height: 1.6;
   min-height: 100vh;
+}
+
+.desk_menu {
+  display: none;
 }
 
 .bg {
@@ -348,5 +353,31 @@ footer {
 
   .footer_links {
     margin: 2em 0;
+  }
+}
+
+@media (min-width: 756px) {
+  .mob_menu {
+    display: none;
+  }
+
+  .desk_menu {
+    @include content-wrapper();
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+
+    .menu_container {
+      display: flex;
+      .menulist,
+      .menu_socials {
+        @include flex();
+        align-items: center;
+      }
+
+      a:nth-child(4) {
+        margin-right: 2em;
+      }
+    }
   }
 }
