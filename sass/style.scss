@@ -296,15 +296,23 @@ main {
   background-size: cover;
   height: 60vh;
   text-align: center;
+  margin: 4em auto;
+  padding: 10em 0;
 
   button {
     color: $white;
     background-color: #f48847;
     border: none;
     display: block;
-    width: 160px;
     margin: 3em auto 7em;
     padding: 1em 2em;
     font-weight: 600;
+    width: 155px;
+    word-wrap: none;
+  }
+
+  input {
+    padding: 1em 3em;
+    margin: 2em 0 0;
   }
 }
