@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@300;400;600&family=Nunito+Sans:wght@300;400;700&display=swap");
+
 .text-dark {
   color: hsl(var(--clr-dark));
 }
@@ -10,24 +12,19 @@
   color: hsl(var(--clr-white));
 }
 
-.alpha-text {
-  color: hsl(var(--clr-white) / 0.6);
-}
-
 /* ------ */
 
 /* typography */
-
-.ff-sans-cond {
-  font-family: var(--ff-sans-cond);
+.ff-serif-logo {
+  font-family: var(--ff-serif-logo);
 }
 
-.ff-serif {
-  font-family: var(--ff-sans-serif);
+.ff-sans {
+  font-family: var(--serif-2);
 }
 
 .ff-normal {
-  font-family: var(--ff-sans-normal);
+  font-family: var(--serif-3);
 }
 
 .letter-spacing-1 {
