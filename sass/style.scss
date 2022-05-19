@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@300;400;600&family=Nunito+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;400;700&display=swap");
 
 $ff-logo: "Alata", sans-serif;
 $ff-heading: "Nunito Sans", sans-serif;
@@ -39,6 +39,11 @@ $white: #fff;
 @mixin container {
   padding: 2em;
   max-width: 80rem;
+  margin: 0 auto;
+}
+
+@mixin content-wrapper {
+  padding: 0 1em;
   margin: 0 auto;
 }
 
@@ -113,6 +118,34 @@ select {
   font-size: $fs-200;
 }
 
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -136,6 +169,7 @@ body {
 }
 
 .logo {
+  color: $white;
   font-size: $fs-500;
   font-weight: 600;
 }
@@ -184,4 +218,13 @@ body {
   @include container();
   display: flex;
   justify-content: space-between;
+}
+
+.page-section {
+  min-height: 60vh;
+  padding: 7em 0;
+  h1.hero {
+    text-align: center;
+    font-size: $fs-600;
+  }
 }
