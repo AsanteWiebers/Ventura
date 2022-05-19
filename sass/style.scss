@@ -103,6 +103,9 @@ select {
 .text-white {
   color: $white;
 }
+.text-orange {
+  color: $orange;
+}
 
 .fs-800 {
   font-size: $fs-800;
@@ -171,7 +174,9 @@ select {
 .uppercase {
   text-transform: uppercase;
 }
-
+.underline {
+  text-decoration: underline;
+}
 // Utility classes
 
 // ===== //
