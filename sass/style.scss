@@ -95,6 +95,14 @@ select {
   font: inherit;
 }
 
+.text-black {
+  color: $black;
+}
+
+.text-white {
+  color: $white;
+}
+
 .fs-800 {
   font-size: $fs-800;
 }
@@ -153,6 +161,10 @@ select {
 
 .center {
   text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 .uppercase {
@@ -242,6 +254,7 @@ body {
 
 main {
   text-align: center;
+
   .small_gallery {
     @include content-wrapper();
   }
@@ -273,5 +286,25 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vh;
+  }
+}
+
+.cta {
+  background-image: url(/assets/images/static1.squarespace.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+
+  button {
+    color: $white;
+    background-color: #f48847;
+    border: none;
+    display: block;
+    width: 160px;
+    margin: 3em auto 7em;
+    padding: 1em 2em;
+    font-weight: 600;
   }
 }
