@@ -14,10 +14,22 @@
 
 <body>
     <header class="bg">
-        <nav>
-            <p class="logo ff-sans">Ventura</p>
-            <ul>
-                <li>Winkel</li>
+        <!-- <i class="fa-brands fa-instagram " style="color: white ;"></i>
+        <i class="fa-brands fa-facebook " style="color: white;"></i>
+        <i class="fa-brands fa-twitter " style="color:white ;"></i>
+        <i class="fa-solid fa-cart-shopping " style="color:white;"></i> -->
+        <div class="mob_menu">
+            <i class="fa-solid fa-bars fa-2x"></i>
+            <p class="logo ff-sans ff-800">Ventura</p>
+            <i class="fa-solid fa-cart-shopping fa-2x" style="color: black;"></i>
+        </div>
+        <nav class="overlay">
+            <i class="cart fa-solid fa-cart-shopping fa-2x" style="color: black;"></i>
+            <a href="" class="closebtn" onclick="closeNav()"> <i class="fa-solid fa-xmark fa-2x"></i></a>
+            <ul class="overlay-content">
+                <a href="#">
+                    <li>Winkel</li>
+                </a>
                 <a href="shop.html">
                     <li>Over ons</li>
                 </a>
@@ -28,10 +40,6 @@
                     <li>Locaties</li>
                 </a>
             </ul>
-            <i class="fa-brands fa-instagram " style="color: white ;"></i>
-            <i class="fa-brands fa-facebook " style="color: white;"></i>
-            <i class="fa-brands fa-twitter " style="color:white ;"></i>
-            <i class="fa-solid fa-cart-shopping " style="color:white;"></i>
         </nav>
     </header>
 
@@ -84,6 +92,7 @@
             <li>Locaties</li>
         </ul>
     </footer>
+    <script src="/main.js"></script>
 </body>
 
 </html>

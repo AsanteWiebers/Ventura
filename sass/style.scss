@@ -23,7 +23,7 @@ $white: #fff;
 
 @mixin flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap, 2rem);
 }
 
 @mixin grid {
@@ -37,7 +37,7 @@ $white: #fff;
 }
 
 @mixin container {
-  padding: 0 2em;
+  padding: 2em;
   max-width: 80rem;
   margin: 0 auto;
 }
@@ -60,6 +60,10 @@ p,
 figure,
 picture {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul,
@@ -121,4 +125,63 @@ body {
   font-family: $ff-paragraph;
   line-height: 1.6;
   min-height: 100vh;
+}
+
+.bg {
+  background-image: url(/assets/images/home_bg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+}
+
+.logo {
+  font-size: $fs-500;
+  font-weight: 600;
+}
+
+.overlay {
+  height: 100%;
+  position: fixed;
+  overflow-x: hidden;
+  left: 0;
+  top: 0;
+  width: 0;
+  z-index: 1;
+  transition: 0.5s;
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.overlay a {
+  display: block;
+  transition: 0.3s;
+  text-decoration: none;
+  color: $black;
+  font-size: $fs-500;
+  font-weight: 600;
+  padding: 0.2em;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+.cart {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+}
+
+.mob_menu {
+  @include container();
+  display: flex;
+  justify-content: space-between;
 }
