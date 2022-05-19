@@ -43,7 +43,12 @@ $white: #fff;
 }
 
 @mixin content-wrapper {
-  padding: 0 1em;
+  padding: 0 1.5em;
+  margin: 0 auto;
+}
+
+@mixin nav-wrapper {
+  padding: 0.5em;
   margin: 0 auto;
 }
 
@@ -146,6 +151,10 @@ select {
   font-weight: 900;
 }
 
+.center {
+  text-align: center;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -226,5 +235,43 @@ body {
   h1.hero {
     text-align: center;
     font-size: $fs-600;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+main {
+  text-align: center;
+  .small_gallery {
+    @include content-wrapper();
+  }
+
+  .featured {
+    padding: 2.8em;
+  }
+
+  .btn {
+    color: $white;
+    background-color: #f48847;
+    display: block;
+    width: 130px;
+    margin: 3em auto 7em;
+    padding: 1em 2em;
+    font-weight: 600;
+  }
+
+  .collection-bg {
+    background-image: url(/assets/images/product-country-feast-set-15deg-4x3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+  }
+  .pairs-bg {
+    background-image: url(/assets/images/2015-08-12_home-goods-0052-v2-FINAL.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
   }
 }
