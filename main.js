@@ -6,16 +6,16 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.img', {
-    delay: 100,
+    delay: 50,
     origin: 'bottom'
 });
 
 ScrollReveal().reveal('.collection-bg', {
-    delay:100,
+    delay: 50,
     origin: 'bottom'
 });
 ScrollReveal().reveal('.pairs-bg', {
-    delay: 100,
+    delay: 50,
     origin: 'bottom'
 });
 

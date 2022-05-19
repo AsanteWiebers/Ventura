@@ -19,6 +19,7 @@ $letter-spacing-3: 2.35px;
 
 $orange: #f48847;
 $black: #000;
+$light-grey: rgb(189, 189, 189);
 $white: #fff;
 
 @mixin flex {
@@ -316,5 +317,31 @@ main {
   input {
     padding: 1em 3em;
     margin: 2em 0 0;
+    border: none;
+    outline: none;
+  }
+
+  input:focus {
+    border: 5px solid $orange;
+  }
+
+  ::placeholder {
+    color: $light-grey;
+    letter-spacing: 4px;
+  }
+}
+
+footer {
+  @include content-wrapper();
+  .socials {
+    @include flex();
+  }
+
+  .made {
+    margin: 1em 0;
+  }
+
+  .footer_links {
+    margin: 2em 0;
   }
 }
