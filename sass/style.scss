@@ -7,6 +7,7 @@ $ff-paragraph: "Bai Jamjuree", sans-serif;
 $fs-900: 9.375rem;
 $fs-800: 6.25rem;
 $fs-700: 3.5rem;
+$fs-650: 3rem;
 $fs-600: 2rem;
 $fs-500: 1.75rem;
 $fs-400: 1.125rem;
@@ -300,6 +301,23 @@ main {
     height: 30vh;
     padding: 1em;
   }
+
+  .plate-bg {
+    background-image: url(/assets/images/pexels-karolina-grabowska-4226876.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    padding: 1em;
+  }
+  .classic-bg {
+    background-image: url(/assets/images/product-milk-dip-cup-15deg-4x3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    padding: 1em;
+  }
 }
 
 .cta {
@@ -363,21 +381,39 @@ footer {
 
   .desk_menu {
     @include content-wrapper();
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
-
+    padding: 3em;
+    .logo {
+      font-size: $fs-600;
+    }
     .menu_container {
       display: flex;
+
       .menulist,
       .menu_socials {
         @include flex();
         align-items: center;
+        letter-spacing: $letter-spacing-3;
+        a {
+          white-space: no-wrap;
+        }
       }
 
       a:nth-child(4) {
         margin-right: 2em;
       }
     }
+  }
+
+  .page-section {
+    h1.hero {
+      font-size: $fs-650;
+      width: 50%;
+    }
+  }
+
+  .small_gallery {
+    border: 5px solid red;
   }
 }
