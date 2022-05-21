@@ -18,4 +18,12 @@ ScrollReveal().reveal('.pairs-bg', {
     delay: 50,
     origin: 'bottom'
 });
+ScrollReveal().reveal('.plate-bg', {
+    delay: 50,
+    origin: 'bottom'
+});
+ScrollReveal().reveal('.classic-bg', {
+    delay: 50,
+    origin: 'bottom'
+});
 

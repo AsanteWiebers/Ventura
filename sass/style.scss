@@ -179,6 +179,10 @@ select {
 .underline {
   text-decoration: underline;
 }
+
+.flex {
+  @include flex();
+}
 // Utility classes
 
 // ===== //
@@ -270,6 +274,10 @@ main {
   .small_gallery {
     @include content-wrapper();
   }
+
+  // .intro_gallery {
+  //   display: block;
+  // }
 
   .featured {
     padding: 2.8em;
@@ -407,13 +415,26 @@ footer {
   }
 
   .page-section {
+    margin-bottom: -15em;
     h1.hero {
       font-size: $fs-650;
       width: 50%;
     }
   }
 
-  .small_gallery {
-    border: 5px solid red;
+  .intro_gallery {
+    display: flex;
+    padding: 12em;
+  }
+
+  .img {
+    height: 640px;
+    width: 600px;
+  }
+
+  .collection_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
