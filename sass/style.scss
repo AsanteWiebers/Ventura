@@ -21,6 +21,7 @@ $letter-spacing-3: 2.35px;
 $orange: #f48847;
 $black: #000;
 $light-grey: rgb(189, 189, 189);
+$greenish: #40bfc1;
 $white: #fff;
 
 @mixin flex {
@@ -165,6 +166,16 @@ select {
   font-weight: 900;
 }
 
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+.letter-spacing-2 {
+  letter-spacing: 3.75px;
+}
+.letter-spacing-3 {
+  letter-spacing: 2px;
+}
+
 .center {
   text-align: center;
 }
@@ -275,10 +286,6 @@ main {
     @include content-wrapper();
   }
 
-  // .intro_gallery {
-  //   display: block;
-  // }
-
   .featured {
     padding: 2.8em;
   }
@@ -368,19 +375,26 @@ main {
 }
 
 footer {
-  @include content-wrapper();
+  margin: 0 auto;
+  text-align: center;
+  height: 40vh;
+
   .socials {
-    @include flex();
+    margin: 2em 0;
   }
 
   .made {
     margin: 1em 0;
+    color: $greenish;
+    letter-spacing: 3px;
   }
 
   .footer_links {
-    margin: 2em 0;
+    margin: 0 auto;
   }
 }
+
+// Biggger devices
 
 @media (min-width: 756px) {
   .mob_menu {
@@ -424,10 +438,11 @@ footer {
 
   .intro_gallery {
     display: flex;
+    gap: 2em;
     padding: 12em;
   }
 
-  .img {
+  .art_img {
     height: 640px;
     width: 600px;
   }
@@ -443,5 +458,26 @@ footer {
     justify-content: space-around;
     @include flex();
     height: 20vh;
+    .socials {
+      margin: 1em 0;
+      @include flex;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .intro_gallery {
+    display: flex;
+    gap: 5em;
+    padding: 12em;
+  }
+
+  .art_img {
+    height: 710px;
+    width: 800px;
+  }
+
+  .shop_img {
+    height: 350px;
   }
 }
