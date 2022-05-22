@@ -5,11 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winkel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>De winkel</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
+    <header class="bg">
+        <div class="desk_menu">
+            <div>
+                <a href="index.html">
+                    <p class="logo">Ventura</p>
+                </a>
+            </div>
+            <div class="menu_container">
+                <ul class="menulist">
+                    <a href="#">
+                        <li class="fw-800">Winkel</li>
+                    </a>
+                    <a href="shop.html">
+                        <li class="fw-800">Over ons</li>
+                    </a>
+                    <a href="contact.html">
+                        <li class="fw-800">Contact</li>
+                    </a>
+                    <a href="locaties.html">
+                        <li class="fw-800">Locaties</li>
+                    </a>
+                </ul>
+                <div class="menu_socials">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram "
+                            style="color: white ;"></i></a>
+                    <a href="https://nl-nl.facebook.com/" target="_blank"><i class="fa-brands fa-facebook "
+                            style="color: white;"></i></a>
+                    <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-twitter "
+                            style="color:white ;"></i></a>
+                    <i class="fa-solid fa-cart-shopping " style="color:white;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mob_menu">
+            <i class="fa-solid fa-bars fa-2x" style="color: white;"></i>
+            <p class="logo ff-sans ff-800">Ventura</p>
+            <i class="fa-solid fa-cart-shopping fa-2x" style="color: white;"></i>
+        </div>
+        <nav class="overlay">
+            <i class="cart fa-solid fa-cart-shopping fa-2x" style="color: black;"></i>
+            <a href="" class="closebtn" onclick="closeNav()"> <i class="fa-solid fa-xmark fa-2x"></i></a>
+            <ul class="overlay-content">
+                <a href="#">
+                    <li>Winkel</li>
+                </a>
+                <a href="shop.html">
+                    <li>Over ons</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+                <a href="locaties.html">
+                    <li>Locaties</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Shop</h1>
+        <div class="container">
+            <hr class="grey-line">
+            <div><img src="/assets/images/product-classic-set-15deg-4x3.jpg" alt=""></div>
+            <div><img src="/assets/images/product-country-feast-set-15deg-4x3 (1).jpg" alt=""></div>
+            <div><img src="/assets/images/product-earth-sky-planter-15deg-4x3.jpg" alt=""> </div>
+            <div><img src="/assets/images/product-golden-mist-cup-15deg-01-4x3.jpg" alt=""> </div>
+            <div><img src="/assets/images/product-golden-mist-pair-15deg-02-4x3.jpg" alt=""></div>
+            <div><img src="/assets/images/product-harvest-moon-cup-15deg-4x3.jpg" alt=""></div>
+            <div><img src="/assets/images/product-milk-dip-cup-15deg-4x3.jpg" alt=""></div>
+            <div><img src="/assets/images/product-salt-spout-15deg-01-4x3.jpg" alt=""></div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p class="text-black fw-700 fs-600">Ventura</p>
+            <p>Gemaakt door<a class="made fw-600" href="https://asantewiebers.github.io" target="_blank"> Asante </a>
+            </p>
 
+            <ul class="socials">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <li><i class="fa-brands fa-instagram " style="color: black;"></i></li>
+                </a>
+                <a href="https://nl-nl.facebook.com/" target="_blank">
+                    <li><i class="fa-brands fa-facebook " style="color: black;"></i></li>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <li><i class="fa-brands fa-twitter " style="color: black;"></i></li>
+                </a>
+            </ul>
+        </div>
+        <div class="flex">
+            <ul class="footer_links">
+                <li class="text-orange underline">Winkel</li>
+                <li class="text-orange underline">Contact</li>
+            </ul>
+            <ul class="footer_links">
+                <li class="text-orange underline">Over Ons</li>
+                <li class="text-orange underline">Locaties</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -481,3 +481,14 @@ footer {
     height: 350px;
   }
 }
+
+// Winkel pagina
+
+@media (min-width: 756px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1em;
+  }
+}
