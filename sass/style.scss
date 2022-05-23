@@ -482,6 +482,21 @@ footer {
   }
 }
 
+// Over ons pagina
+.about_title {
+  border: 1px solid red;
+  padding: 2em;
+}
+
+.about_text {
+  @include content-wrapper();
+  margin: 0 0 2em;
+}
+
+.about_img {
+  margin: 3em auto;
+}
+
 // Winkel pagina
 
 @media (min-width: 756px) {
@@ -505,6 +520,10 @@ select {
   border-radius: 4px;
 
   box-sizing: border-box;
+}
+
+input#email {
+  width: 30%;
 }
 
 input[type="submit"] {
