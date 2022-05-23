@@ -49,7 +49,9 @@
         </div>
         <div class="mob_menu">
             <i class="fa-solid fa-bars fa-2x" style="color: white;"></i>
-            <p class="logo ff-sans ff-800">Ventura</p>
+            <a href="index.html">
+                <p class="logo ff-sans ff-800">Ventura</p>
+            </a>
             <i class="fa-solid fa-cart-shopping fa-2x" style="color: white;"></i>
         </div>
         <nav class="overlay">
@@ -73,45 +75,52 @@
     </header>
     <main>
         <div class="contact_container">
-            <div>
-                <h2>Get in touch.</h2>
+            <div class="text_container">
+                <h2 class="contact_title">Neem contact op.</h2>
                 <p class="contact_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.</p>
+
+                <p class="contact_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+
+                <p class="contact_text fw-600">shopbijventura@ventura.com</p>
             </div>
             <div>
-                <div>
-                    <form action="/action_page.php">
-                        <label for="fname">Voornaam *</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Je naam..">
+                <form action="/action_page.php">
 
-                        <label for="lname">Achternaam *</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Je achternaam..">
+                    <label class="fw-600" for="fname">Voornaam *</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Je naam..">
 
-                        <label for="email">Email *</label>
-                        <input type="text" id="email" name="lastname" placeholder="email..">
+                    <label class="fw-600" for="lname">Achternaam *</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Je achternaam..">
 
-                        <p><label for="message"> Bericht</label></p>
-                        <textarea name="" id="" cols="50" rows="5" placeholder="Typ hier je boodschap"></textarea>
-                        <input type="submit" value="submit">
-                        <label for="province">Provincie</label>
-                        <select id="province" name="province">
-                            <option value="australia">Noord-Holland</option>
-                            <option value="canada">Zuid-Holland</option>
-                            <option value="usa">Utrecht</option>
-                            <option value="usa">Flevoland</option>
-                            <option value="usa">Friesland</option>
-                            <option value="usa">Groningen</option>
-                            <option value="usa">Drenthe</option>
-                            <option value="usa">Overijssel</option>
-                            <option value="usa">Gelderland</option>
-                            <option value="usa">Limburg</option>
-                        </select>
+                    <label class="fw-600" for="email">Email *</label>
+                    <input type="text" id="email" name="lastname" placeholder="email..">
 
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
+                    <p><label class="fw-600" for="message"> Bericht</label></p>
+                    <textarea name="" id="" cols="50" rows="5" placeholder="Typ hier je boodschap"></textarea>
+                    <input type="submit" value="Verzend">
+                    <label class="fw-600" for="province">Woonplaats</label>
+                    <select id="province" name="province">
+                        <option value="australia">Noord-Holland</option>
+                        <option value="canada">Zuid-Holland</option>
+                        <option value="usa">Utrecht</option>
+                        <option value="usa">Flevoland</option>
+                        <option value="usa">Friesland</option>
+                        <option value="usa">Groningen</option>
+                        <option value="usa">Drenthe</option>
+                        <option value="usa">Overijssel</option>
+                        <option value="usa">Gelderland</option>
+                        <option value="usa">Limburg</option>
+                    </select>
+
+                    <input type="submit" value="Verzend">
+                </form>
             </div>
         </div>
     </main>

@@ -19,6 +19,7 @@ $letter-spacing-2: 2.7px;
 $letter-spacing-3: 2.35px;
 
 $orange: #f48847;
+$active-orange: #ec9b3b;
 $black: #000;
 $light-grey: rgb(189, 189, 189);
 $greenish: #40bfc1;
@@ -513,6 +514,11 @@ footer {
 
 // contact pagina
 
+.contact_title {
+  font-size: $fs-600;
+  margin: 2em;
+}
+
 .contact_text {
   @include container();
   margin: 2em 0 2em;
@@ -552,15 +558,54 @@ input[type="submit"] {
   width: 50%;
   background-color: $orange;
   color: white;
+  display: block;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 1em auto 3em;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-2;
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: $active-orange;
+}
+
+@media (min-width: 756px) {
+  .contact_container {
+    display: flex;
+    .text_container {
+      text-align: left;
+      width: 50%;
+      .contact_title {
+        text-align: center;
+      }
+    }
+
+    form {
+      margin: 4em 0 0 8em;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 1em auto;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input#email {
+      width: 100%;
+    }
+
+    textarea {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
 }
 
 // Winkel pagina
