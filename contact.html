@@ -5,11 +5,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="/css/style.css">
     <title>Contact</title>
 </head>
 
 <body>
+    <header class="bg">
+        <div class="desk_menu">
+            <div>
+                <a href="index.html">
+                    <p class="logo">Ventura</p>
+                </a>
+            </div>
+            <div class="menu_container">
+                <ul class="menulist">
+                    <a href="winkel.html">
+                        <li class="fw-800">Winkel</li>
+                    </a>
+                    <a href="overons.html">
+                        <li class="fw-800">Over ons</li>
+                    </a>
+                    <a href="contact.html">
+                        <li class="fw-800">Contact</li>
+                    </a>
+                    <a href="locaties.html">
+                        <li class="fw-800">Locaties</li>
+                    </a>
+                </ul>
+                <div class="menu_socials">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram "
+                            style="color: white ;"></i></a>
+                    <a href="https://nl-nl.facebook.com/" target="_blank"><i class="fa-brands fa-facebook "
+                            style="color: white;"></i></a>
+                    <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-twitter "
+                            style="color:white ;"></i></a>
+                    <i class="fa-solid fa-cart-shopping " style="color:white;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mob_menu">
+            <i class="fa-solid fa-bars fa-2x" style="color: white;"></i>
+            <p class="logo ff-sans ff-800">Ventura</p>
+            <i class="fa-solid fa-cart-shopping fa-2x" style="color: white;"></i>
+        </div>
+        <nav class="overlay">
+            <i class="cart fa-solid fa-cart-shopping fa-2x" style="color: black;"></i>
+            <a href="" class="closebtn" onclick="closeNav()"> <i class="fa-solid fa-xmark fa-2x"></i></a>
+            <ul class="overlay-content">
+                <a href="#">
+                    <li>Winkel</li>
+                </a>
+                <a href="shop.html">
+                    <li>Over ons</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+                <a href="locaties.html">
+                    <li>Locaties</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact_container">
+            <div>
+                <h2>Get in touch.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <p>Ventura@gmail.com
+                    (555) 555-5555</p>
+            </div>
+            <div>
+                <div>
+                    <form action="/action_page.php">
+                        <label for="fname">Voornaam *</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Je naam..">
 
+                        <label for="lname">Achternaam *</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Je achternaam..">
+
+                        <label for="email">Email *</label>
+                        <input type="text" id="email" name="lastname" placeholder="email..">
+
+                        <p><label for="message"> Bericht</label></p>
+                        <textarea name="" id="" cols="50" rows="5" placeholder="Typ hier je boodschap"></textarea>
+                        <input type="submit" value="submit">
+                        <label for="province">Provincie</label>
+                        <select id="province" name="province">
+                            <option value="australia">Noord-Holland</option>
+                            <option value="canada">Zuid-Holland</option>
+                            <option value="usa">Utrecht</option>
+                            <option value="usa">Flevoland</option>
+                            <option value="usa">Friesland</option>
+                            <option value="usa">Groningen</option>
+                            <option value="usa">Drenthe</option>
+                            <option value="usa">Overijssel</option>
+                            <option value="usa">Gelderland</option>
+                            <option value="usa">Limburg</option>
+                        </select>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
