@@ -618,3 +618,15 @@ input[type="submit"]:hover {
     gap: 1em;
   }
 }
+
+// locatie pagina
+
+.location_box {
+  margin: 1em 0 2em;
+}
+
+.location_img-1,
+.location_img-2,
+.location_img-3 {
+  @include content-wrapper();
+}
