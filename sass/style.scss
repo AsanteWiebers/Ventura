@@ -99,16 +99,20 @@ textarea,
 select {
   font: inherit;
 }
+// ------ //
+
+// Utility classes
 
 .text-black {
   color: $black;
 }
 
-.text-white {
-  color: $white;
-}
 .text-orange {
   color: $orange;
+}
+
+.text-white {
+  color: $white;
 }
 
 .fs-800 {
@@ -171,6 +175,10 @@ select {
   text-decoration: line-through;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .letter-spacing-1 {
   letter-spacing: 4.75px;
 }
@@ -196,14 +204,10 @@ select {
 .uppercase {
   text-transform: uppercase;
 }
-.underline {
-  text-decoration: underline;
-}
 
 .flex {
   @include flex();
 }
-// Utility classes
 
 // ===== //
 
@@ -663,4 +667,13 @@ input[type="submit"]:hover {
 .location_container {
   display: grid;
   gap: 2em;
+}
+
+@media (min-width: 765px) {
+  .location_container {
+    margin: 5em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
