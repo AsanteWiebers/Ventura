@@ -7,6 +7,11 @@ ScrollReveal({
 
 // Home page
 
+ScrollReveal().reveal('.hero', {
+    delay: 0.1,
+    origin: 'right'
+});
+
 ScrollReveal().reveal('.art_img', {
     delay: 50,
     origin: 'bottom'
