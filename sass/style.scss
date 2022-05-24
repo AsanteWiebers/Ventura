@@ -177,6 +177,10 @@ select {
   letter-spacing: 2px;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 .center {
   text-align: center;
 }
@@ -629,4 +633,9 @@ input[type="submit"]:hover {
 .location_img-2,
 .location_img-3 {
   @include content-wrapper();
+}
+
+.location_container {
+  display: grid;
+  gap: 2em;
 }
