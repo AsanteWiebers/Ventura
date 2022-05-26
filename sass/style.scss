@@ -217,16 +217,16 @@ body {
   min-height: 100vh;
 }
 
-.desk_menu {
-  display: none;
-}
-
 .bg {
   background-image: url(/assets/images/home_bg.jpeg);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 65vh;
+  background-position: center;
+  height: 60vh;
+}
+
+.desk_menu {
+  display: none;
 }
 
 .logo {
