@@ -66,6 +66,10 @@ $white: #fff;
   padding: 0;
 }
 
+html {
+  min-height: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -217,12 +221,17 @@ body {
   min-height: 100vh;
 }
 
+// header {
+
+// }
+
 .bg {
-  background-image: url(/assets/images/home_bg.jpeg);
+  background-image: url(/home_bg.jpeg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 60vh;
+  min-height: 555px;
+  // transform: scale(1, 1.1);
 }
 
 .desk_menu {
