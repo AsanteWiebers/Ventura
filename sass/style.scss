@@ -482,16 +482,13 @@ footer {
   .intro_gallery {
     display: flex;
     gap: 5em;
-    padding: 12em;
+    padding: 5em 0;
+    margin: 0 0 5em;
   }
 
   .art_img {
     height: 710px;
     width: 800px;
-  }
-
-  .shop_img {
-    height: 350px;
   }
 }
 
