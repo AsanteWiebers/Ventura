@@ -90,6 +90,19 @@ ul,
 li {
   list-style: none;
   text-decoration: none;
+  li:hover {
+    color: $active-orange;
+    transition: 150ms;
+    transition-timing-function: ease;
+  }
+}
+
+.cta button:hover,
+a.btn:hover {
+  background-color: #f24c4c;
+  cursor: pointer;
+  transition: 900ms;
+  transition-timing-function: ease-in;
 }
 
 img,
@@ -223,7 +236,7 @@ body {
 }
 
 .home_bg {
-  background-image: url(/assets/ctabg.jpg);
+  background-image: url(/assets/images/ctabg.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -355,7 +368,7 @@ main {
 }
 
 .cta {
-  background-image: url(/assets/home.jpg);
+  background-image: url(/assets/images/home.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -416,6 +429,10 @@ footer {
 // Bigger devices
 
 @media (min-width: 756px) {
+  .home_bg {
+    height: 72vh;
+  }
+
   .mob_menu {
     display: none;
   }

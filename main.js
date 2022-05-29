@@ -14,6 +14,11 @@ ScrollReveal().reveal('.hero', {
     origin: 'right'
 });
 
+ScrollReveal().reveal('.featured ', {
+    delay: 10,
+    origin: 'left'
+});
+
 ScrollReveal().reveal('.art_img', {
     delay: 50,
     origin: 'bottom'
@@ -21,11 +26,11 @@ ScrollReveal().reveal('.art_img', {
 
 ScrollReveal().reveal('.collection-bg', {
     delay: 50,
-    origin: 'bottom'
+    origin: 'top'
 });
 ScrollReveal().reveal('.pairs-bg', {
     delay: 50,
-    origin: 'bottom'
+    origin: 'top'
 });
 ScrollReveal().reveal('.plate-bg', {
     delay: 50,
@@ -55,5 +60,21 @@ ScrollReveal().reveal('.about_title', {
     delay: 10,
     origin: 'right'
 });
+
+// locaties
+
+ScrollReveal().reveal('.city_title', {
+    delay: 10,
+    origin: 'right'
+});
+ScrollReveal().reveal('.city_title_2', {
+    delay: 30,
+    origin: 'left'
+});
+ScrollReveal().reveal('.city_title_3', {
+    delay: 100,
+    origin: 'right'
+});
+
 
 
