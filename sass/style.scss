@@ -26,6 +26,13 @@ $light-grey: rgb(189, 189, 189);
 $greenish: #40bfc1;
 $white: #fff;
 
+$mb-1: 0.5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;
+$mb-4: 2rem;
+$mb-5: 2.5rem;
+$mb-6: 3rem;
+
 @mixin flex {
   display: flex;
   gap: var(--gap, 2rem);
@@ -594,7 +601,7 @@ select {
 }
 
 input#email {
-  width: 70%;
+  width: 300px;
 }
 
 input#email:focus {
