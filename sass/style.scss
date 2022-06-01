@@ -487,12 +487,16 @@ footer {
   .intro_gallery {
     display: flex;
     gap: 2em;
-    padding: 12em;
+    margin: 15em auto;
   }
 
   .art_img {
-    height: 640px;
-    width: 600px;
+    height: 400px;
+    width: 400px;
+  }
+
+  .shop_img {
+    height: 200px;
   }
 
   .collection_container {
