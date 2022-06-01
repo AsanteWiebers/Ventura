@@ -409,10 +409,14 @@ main {
 footer {
   margin: 0 auto;
   text-align: center;
-  height: 40vh;
+  height: 70vh;
 
   .socials {
     margin: 2em 0;
+  }
+
+  .social__link {
+    padding: 1em;
   }
 
   .made {
@@ -423,6 +427,7 @@ footer {
 
   .footer_links {
     margin: 0 auto;
+    line-height: 2;
   }
 }
 
@@ -502,11 +507,22 @@ footer {
 }
 
 @media (min-width: 1920px) {
+  .home_bg {
+    height: 80vh;
+  }
+
+  .hero {
+    margin-bottom: 3em;
+  }
+
+  .page-section {
+    padding-bottom: 7em;
+  }
   .intro_gallery {
     display: flex;
     gap: 5em;
     padding: 5em 0;
-    margin: 0 0 5em;
+    margin: 10em 0 5em;
   }
 
   .art_img {
