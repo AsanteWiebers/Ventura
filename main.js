@@ -1,3 +1,14 @@
+let hamburgerIcon = document.getElementById("hamburger-icon");
+let closeIcon = document.getElementById("closeIcon");
+
+hamburgerIcon.addEventListener("click", function(){
+    console.log('clickeddd!!')
+
+})
+
+closeIcon.addEventListener("click", function(){
+    console.log("hey!")
+})
 
 
 ScrollReveal({

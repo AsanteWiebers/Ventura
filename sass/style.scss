@@ -207,9 +207,11 @@ select {
 .letter-spacing-1 {
   letter-spacing: 4.75px;
 }
+
 .letter-spacing-2 {
   letter-spacing: 3.75px;
 }
+
 .letter-spacing-3 {
   letter-spacing: 2px;
 }
@@ -256,6 +258,11 @@ body {
   justify-content: space-between;
 }
 
+#hamburger-icon,
+#shop-cart {
+  cursor: pointer;
+}
+
 .desk_menu {
   display: none;
 }
@@ -266,38 +273,31 @@ body {
   font-weight: 600;
 }
 
-.overlay {
-  height: 100%;
+.overlay-content {
+  text-align: center;
+  background: black;
   position: fixed;
-  overflow-x: hidden;
+  height: 100%;
+  max-width: 100%;
   left: 0;
   top: 0;
-  width: 0;
+  right: 0;
   z-index: 1;
-  transition: 0.5s;
-  .overlay-content {
-    position: relative;
-    top: 10%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
 }
 
-.overlay a {
-  display: block;
-  transition: 0.3s;
-  text-decoration: none;
-  color: $black;
-  font-size: $fs-500;
-  font-weight: 600;
-  padding: 0.2em;
+.overlay-content li {
+  padding: 1em;
+  margin: 5em auto;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .closebtn {
-  position: absolute;
-  top: 20px;
-  left: 10px;
+  color: $white;
+  position: fixed;
+  top: 32px;
+  left: 37px;
+  z-index: 10;
 }
 
 .cart {
