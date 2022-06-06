@@ -1,12 +1,26 @@
 let hamburgerIcon = document.getElementById("hamburger-icon");
 let closeIcon = document.getElementById("closeIcon");
 
+
 hamburgerIcon.addEventListener("click", function(){
+   
+    if (overlayMenu.style.display === "block") {
+        overlayMenu.style.display = "none";
+    } else {
+        overlayMenu.style.display = "block";
+    }
+
     console.log('clickeddd!!')
 
 })
 
 closeIcon.addEventListener("click", function(){
+   
+    if (overlayMenu.style.display === "block") {
+        overlayMenu.style.display = "none";  
+    } else {
+        overlayMenu.style.display = "block";  
+    }
     console.log("hey!")
 })
 

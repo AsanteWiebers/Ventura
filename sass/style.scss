@@ -19,10 +19,10 @@ $letter-spacing-1: 4.75px;
 $letter-spacing-2: 2.7px;
 $letter-spacing-3: 2.35px;
 
-$orange: #f48847;
 $active-orange: #ec9b3b;
 $black: #000;
 $light-grey: rgb(189, 189, 189);
+$orange: #f48847;
 $greenish: #40bfc1;
 $white: #fff;
 
@@ -97,11 +97,12 @@ ul,
 li {
   list-style: none;
   text-decoration: none;
-  li:hover {
-    color: $active-orange;
-    transition: 150ms;
-    transition-timing-function: ease;
-  }
+}
+
+li:hover {
+  color: $active-orange;
+  transition: 150ms;
+  transition-timing-function: ease;
 }
 
 .cta button:hover,
@@ -273,31 +274,33 @@ body {
   font-weight: 600;
 }
 
-.overlay-content {
+.overlay {
+  background: $black;
+  display: block;
   text-align: center;
-  background: black;
-  position: fixed;
+  overflow-x: hidden;
   height: 100%;
   max-width: 100%;
+  position: fixed;
   left: 0;
   top: 0;
   right: 0;
   z-index: 1;
 }
 
-.overlay-content li {
+.overlay_links_list li {
   padding: 1em;
   margin: 5em auto;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
 }
 
 .closebtn {
   color: $white;
-  position: fixed;
-  top: 32px;
-  left: 37px;
-  z-index: 10;
+  cursor: pointer;
+  position: relative;
+  right: 10em;
+  top: 2em;
 }
 
 .cart {
@@ -445,7 +448,8 @@ footer {
     height: 72vh;
   }
 
-  .mob_menu {
+  .mob_menu,
+  .overlay {
     display: none;
   }
 
