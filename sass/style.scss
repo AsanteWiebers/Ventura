@@ -276,7 +276,7 @@ body {
 
 .overlay {
   background: $black;
-  display: block;
+  display: none;
   text-align: center;
   overflow-x: hidden;
   height: 100%;
@@ -491,6 +491,7 @@ footer {
   .intro_gallery {
     display: flex;
     gap: 2em;
+    padding-left: 11em;
     margin: 15em auto;
   }
 

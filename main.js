@@ -4,7 +4,7 @@ let closeIcon = document.getElementById("closeIcon");
 
 hamburgerIcon.addEventListener("click", function(){
    
-    if (overlayMenu.style.display === "block") {
+    if (overlayMenu.style.display === "none") {
         overlayMenu.style.display = "none";
     } else {
         overlayMenu.style.display = "block";
